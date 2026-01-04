@@ -2,6 +2,7 @@ import "./globals.css";
 import { Inter, Montserrat } from "next/font/google";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import { Toaster } from 'sonner';
 
 export const metadata = {
   title: "Ada: Healthcare Resource Locator",
@@ -32,6 +33,7 @@ export default function RootLayout({
           <main className="flex-grow">{children}</main>
           <Footer />
         </div>
+        <Toaster position="bottom-right" closeButton richColors />
       </body>
     </html>
   );

@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import React from 'react';
-import { supabase } from "@/lib/supabase";
+import { supabase } from "@/lib/supabase/supabase";
 import { toast } from "sonner";
 
 export default function Contactpage() {

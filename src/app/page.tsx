@@ -2,7 +2,7 @@ import Image from "next/image";
 export default function HomePage() {
   return (
     <section className="w-full min-h-screen bg-[#fffbea] flex items-start justify-center py-20 px-6">
-      <div className="max-w-7xl mx-auto w-full flex flex-col md:flex-row items-center justify-between gap-12 animate-header">
+      <div className="max-w-7xl mx-auto w-full flex flex-col md:flex-row items-center justify-between gap-12 animate-header-fade">
         
         {/* LEFT SIDE: Text Content */}
         <div className="flex flex-col items-start text-left md:w-1/2 space-y-6 font-montserrat">

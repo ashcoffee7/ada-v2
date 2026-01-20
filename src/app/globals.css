@@ -6,16 +6,17 @@
   --font-inter: var(--font-inter);
   --font-montserrat: var(--font-montserrat);
 
-  --animate-header: header-fade 1s ease-out forwards;
+  --animate-header-fade: header-fade 1s ease-out forwards;
+}
 
-  @keyframes header-fade {
-    from { 
-      opacity: 0; 
-      transform: translateY(-10px); 
-    }
-    to { 
-      opacity: 1; 
-      transform: translateY(0); 
-    }
+@keyframes header-fade {
+  from { 
+    opacity: 0; 
+    transform: translateY(-10px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
   }
 }
+

@@ -7,15 +7,17 @@ export default function Header() {
     { name: 'Location Finder', href: '/locations' },
     { name: 'Resources', href: '/resources' },
     { name: 'Contact', href: '/contact' },
+    { name: 'Your Account', href: '/login'}
   ]
 
   return (
     <header 
       key="main-header" 
-      className="sticky top-0 z-50 w-full bg-[#fffbea] animate-header">
+      className="sticky top-0 z-50 w-full bg-[#fffbea] animate-header-fade">
       <div className={"flex items-center h-24 sm:h-32 px-6 md:px-12 w-full max-w-full justify-between"}>
         
         <div className="flex items-center">
+          <Link href="/" className="flex items-center hover:opacity-80 transition-opacity cursor-pointer">
           <div className="flex-shrink-0">
             <Image 
               src="/images/logo.png" 
@@ -26,6 +28,7 @@ export default function Header() {
               priority 
             />
           </div>
+        </Link>
           <h3 className="font-thin font-montserrat text-3xl text-[#3d9194] leading-none tracking-tighter ml-2">
             ada.
           </h3>

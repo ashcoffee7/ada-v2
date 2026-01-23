@@ -53,12 +53,14 @@ export default function AuthPage() {
             address: '',
             insurance: ''
         });
-        if (mode === 'signup') {
-            router.push('/login');
-        }
-        if (mode === 'login') {
-            router.push('/');
-        }
+        setTimeout(() => {
+            if (mode === 'signup') {
+                window.location.href = '/login';
+            }
+            if (mode === 'login') {
+                window.location.href = '/';
+            }   
+        }, 1500)
       } else {
         setStatus({ type: 'error', message: data.error || 'Something went wrong.' });
       }
